@@ -842,7 +842,15 @@
             border: 1px solid rgba(255, 255, 255, 0.15);
             transform-style: preserve-3d;
         }
-        
+        .projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:40px;
+}
+
+.project-card{
+    height:100%;
+}
         .project-card:hover {
             transform: translateY(-20px) rotateY(10deg);
             box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 
@@ -1368,16 +1376,19 @@
             <div class="section-title">
                 <h2>Academic Projects</h2>
             </div>
-            <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-Jewellery"></i>
-                    </div>
-            <div class="project-content">
-                        <h3>AI Jewellery Design Analyzer</h3>
-                        <p>Built an AI application for jewellery design analyzer to analyze and classify jewellery designs. Improved design evaluation using machine learning techniques..</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PYTHON</span>
-                        </div>
+          <div class="project-card">
+    <div class="project-icon">
+        <i class="fas fa-gem"></i>
+    </div>
+
+    <div class="project-content">
+        <h3>AI Jewellery Design Analyzer</h3>
+        <p>Built an AI-powered jewellery design analyzer that classifies jewellery types, estimates weight and cost, and provides intelligent design recommendations using machine learning.</p>
+        <div class="project-tech">
+            <span class="tech-tag">PYTHON</span>
+        </div>
+    </div>
+</div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-icon">
